@@ -1,8 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
 import main from './imagesFolder/main1.jpg'
-// import fb from './imagesFolder/fb.png'
-// import linkedin from './imagesFolder/linkedIn.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faFacebookF , faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
