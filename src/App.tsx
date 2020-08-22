@@ -15,10 +15,8 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import PregnantWomanIcon from "@material-ui/icons/PregnantWoman";
 import SchoolIcon from "@material-ui/icons/School";
 import AccessibilityIcon from "@material-ui/icons/Accessibility";
-import LaptopMacIcon from "@material-ui/icons/LaptopMac";
-import HotelIcon from "@material-ui/icons/Hotel";
+import BookIcon from "@material-ui/icons/Book";
 import WorkIcon from "@material-ui/icons/Work";
-import RepeatIcon from "@material-ui/icons/Repeat";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import "./App.css";
@@ -112,7 +110,11 @@ function App() {
                     <Typography variant="h6" component="h1">
                       Manipal Institute of Technology
                     </Typography>
-                    <Typography>Because it&apos;s awesome!</Typography>
+                    <Typography>
+                      Courses: Data Structures, DataBase, Algorithms, System
+                      programming, Discrete mathematics, Operating Systems,
+                      Optimization Theory
+                    </Typography>
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
@@ -211,6 +213,54 @@ function App() {
                       {" "}
                       Designed and developed two softwares to simulate automotive
                       embedded systems in virtual environments{" "}
+                    </Typography>
+                  </Paper>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography variant="body2" color="textSecondary">
+                    2019 - 2020
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    Post Graduation Diploma In Data Science
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    Bengaluru, India
+                  </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot color="primary">
+                    <SchoolIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Paper elevation={3} className={classes.paper}>
+                    <Typography>
+                      Courses: Python, SQL, Inferential Statistics, Haddop,
+                      PySpark, Machine Learning, Deep Learning
+                    </Typography>
+                  </Paper>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography variant="body2" color="textSecondary">
+                    2013 - Present
+                  </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot color="primary">
+                    <BookIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Paper elevation={3} className={classes.paper}>
+                    <Typography>
+                      Moocs from Coursera, HP, Cetpa (MS certified Silver Learning
+                      Partner) etc..
                     </Typography>
                   </Paper>
                 </TimelineContent>
