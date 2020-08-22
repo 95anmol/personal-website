@@ -59,7 +59,7 @@
   background-color: white;
 }
 
-.typewriter h4 {
+.typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */

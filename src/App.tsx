@@ -12,19 +12,24 @@ import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
-import PregnantWomanIcon from "@material-ui/icons/PregnantWoman";
 import SchoolIcon from "@material-ui/icons/School";
 import AccessibilityIcon from "@material-ui/icons/Accessibility";
 import BookIcon from "@material-ui/icons/Book";
 import WorkIcon from "@material-ui/icons/Work";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import GitHubIcon from '@material-ui/icons/GitHub';
+import Grid from "@material-ui/core/Grid";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import "./App.css";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
   paper: {
-    padding: "6px 16px",
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
@@ -53,39 +58,56 @@ function App() {
             <div style={{ marginTop: "-2%" }}>
               <p>I'm a budding Data Scientist</p>
             </div>
-            <div style={{margin:"0 20%"}}>
+            <div style={{ margin: "0 20%" }}>
               <div>
                 <div className="subheading">
                   <p>Who Am I?</p>
                 </div>
                 <div>
-                  I am a full-stack developer. I am a senior developer with good knowledge of front-end techniques.
-                  I am an aspiring Data Scientist and love to talk about it. I love spending time on fixing little details and optimizing code.
+                  I am a full-stack developer. I am a senior developer with good
+                  knowledge of front-end techniques. I am an aspiring Data
+                  Scientist and love to talk about it. I love spending time on
+                  fixing little details and optimizing code.
                 </div>
-
               </div>
               <div>
-
-                <div style={{margin:"3%", float:"left"}}>
-                  <img src={mypic} alt="image" style={{height:"30vh"}}/>
-                </div>
-
-                <div className="subheading">
-                  <p>Details</p>
-                </div>
-                <div>
-                  <p>
-                    <b>Name</b>
-                  </p>
-                  Anmol Goel
-                  <p>
-                    <b>Age:</b>
-                  </p>
-                  25
-                  <p>
-                    <b>Location</b>
-                  </p>
-                  Bengaluru, India
+                <div className={classes.root}>
+                  <Grid container spacing={3}>
+                    <Grid item xs={12} sm={6}>
+                      <Paper elevation={0} className={classes.paper}>
+                        <div>
+                          <img
+                              src={mypic}
+                              alt="image"
+                              style={{ height: "35vh" }}
+                          />
+                        </div>
+                      </Paper>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                      <Paper elevation={0} className={classes.paper}>
+                        <div>
+                          <div className="subheading">
+                            <p>Details</p>
+                          </div>
+                          <div>
+                            <p>
+                              <b>Name</b>
+                            </p>
+                            Anmol Goel
+                            <p>
+                              <b>Age:</b>
+                            </p>
+                            25
+                            <p>
+                              <b>Location</b>
+                            </p>
+                            Bengaluru, India
+                          </div>
+                        </div>
+                      </Paper>
+                    </Grid>
+                  </Grid>
                 </div>
               </div>
             </div>
