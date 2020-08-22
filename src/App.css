@@ -14,7 +14,6 @@
 }
 
 .App-header {
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,7 @@
   color: #61dafb;
 }
 
-.Name{
+.Name {
   color: black;
   position: absolute;
   left: 50%;
@@ -37,26 +36,26 @@
   font-family: cursive;
 }
 
-.ICanHelp{
+.heading {
   font-size: xx-large;
   color: #0b4972;
 }
 
-.AvailWork{
+.AvailWork {
   font-size: x-large;
   color: #0b4972;
 }
 
-.contactMe{
+.contactMe {
   margin-top: 2%;
   font-size: medium;
 }
 
-.contactImgLogo{
+.contactImgLogo {
   height: 20vh;
 }
 
-.mailButton{
+.mailButton {
   outline: none;
   border: none;
   background-color: white;
@@ -64,25 +63,32 @@
 
 .typewriter h4 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation:
-          typing 2.5s steps(40, end),
-          blink-caret .75s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 @keyframes App-logo-spin {
@@ -92,5 +98,4 @@
   to {
     transform: rotate(360deg);
   }
-
 }

@@ -17,8 +17,13 @@ function App() {
           <h4>A tech enthusiast</h4>
         </div>
       </header>
+      <div>
+        <div className="heading">
+          <h2> About me </h2>
+        </div>
+      </div>
       <footer>
-        <div className="ICanHelp">
+        <div className="heading">
           <h2> I can help. </h2>
         </div>
         <div className="AvailWork">I’m currently available for work.</div>
