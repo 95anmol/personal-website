@@ -59,17 +59,17 @@ function App() {
                   <p>Who Am I?</p>
                 </div>
                 <div>
-                  I am an full-stack developer. I am a senior developer with good knowledge of front-end techniques.
+                  I am a full-stack developer. I am a senior developer with good knowledge of front-end techniques.
                   I am an aspiring Data Scientist and love to talk about it. I love spending time on fixing little details and optimizing code.
                 </div>
 
               </div>
               <div>
 
-                <div style={{margin:"3%"}}>
-                  <img src={mypic} alt="image" style={{height:"40vh"}}/>
+                <div style={{margin:"3%", float:"left"}}>
+                  <img src={mypic} alt="image" style={{height:"30vh"}}/>
                 </div>
-                
+
                 <div className="subheading">
                   <p>Details</p>
                 </div>
