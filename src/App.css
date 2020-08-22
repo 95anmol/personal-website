@@ -32,8 +32,6 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: xx-large;
-  font-family: cursive;
 }
 
 .heading {
@@ -41,7 +39,7 @@
   color: #0b4972;
 }
 
-.AvailWork {
+.subheading {
   font-size: x-large;
   color: #0b4972;
 }
