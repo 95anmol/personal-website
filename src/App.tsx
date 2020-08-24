@@ -1,6 +1,7 @@
 import React from "react";
-import main from "./imagesFolder/main1.jpg";
+import main from "./imagesFolder/main2.jpg";
 import mypic from "./imagesFolder/anmol.png";
+import hireMe from "./imagesFolder/hireWork.png";
 import MailIcon from "@material-ui/icons/Mail";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -115,7 +116,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div id="aboutMe">
+          <div id="aboutMe" style={{backgroundColor:"#f0f1f6"}}>
             <div className="heading">
               <h2> About me </h2>
             </div>
@@ -333,49 +334,58 @@ function App() {
             <h2> This is my system </h2>
           </div>
           <div>
-            <ul>
-              <li>
-                <a
-                    href="https://www.quora.com/Is-getting-rich-worth-it-9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                  PURSUE PASSIONS, NOT PAYCHECKS
-                </a>
-              </li>
-              <li>
-                <a
-                    href="http://paulgraham.com/ecw.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                  BELIEVE IN CHANGE
-                </a>
-              </li>
-              <li>
-                <a
-                    href="http://paulgraham.com/founders.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                  Be Crafty, Lovable, Systematic, and Relentless
-                </a>
-              </li>
-              <li>
-                <a
-                    href="http://blogoscoped.com/archive/2005-08-24-n14.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                  BE LAZY AND DUMB
-                </a>
-              </li>
-            </ul>
+            <div>
+            <button
+                className = "button subheading"
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open('https://www.quora.com/Is-getting-rich-worth-it-9','_blank')
+                }}
+            > PURSUE PASSIONS, NOT PAYCHECKS
+            </button>
+            </div>
+            <div>
+            <button
+                type="button"
+                className = "button subheading"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open('http://paulgraham.com/ecw.html','_blank')
+                }}
+            > BELIEVE IN CHANGE
+            </button>
+            </div>
+            <div>
+              <button
+                  type="button"
+                  className = "button subheading"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open('http://paulgraham.com/founders.html','_blank')
+                  }}
+              > Be Crafty, Lovable, Systematic, and Relentless
+              </button>
+            </div>
+            <div>
+              <button
+                  type="button"
+                  className = "button subheading"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open('http://blogoscoped.com/archive/2005-08-24-n14.html','_blank')
+                  }}
+              >  BE LAZY AND DUMB
+              </button>
+            </div>
           </div>
         </div>
-        <footer>
+        <footer style={{backgroundColor:"#f0f1f6"}}>
           <div className="heading">
-            <h2> I can help. </h2>
+            <h2> I can help.
+              <img src={hireMe} style={{height:"10vh"}} alt="hire me" />
+            </h2>
+
           </div>
           <div className="subheading">I’m currently available for work.</div>
           <div className="contactMe">

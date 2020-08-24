@@ -28,19 +28,23 @@
 }
 
 .Name {
-  color: black;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: monospace;
 }
 
+h2{
+  font-weight: normal !important;
+}
 .heading {
   font-size: xx-large;
   color: #0b4972;
+  margin: 3%;
 }
 
 .subheading {
-  font-size: x-large;
+  font-size: larger;
   color: #0b4972;
 }
 
@@ -68,6 +72,12 @@
   animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
+.button{
+  background-color: white;
+  border : none;
+  margin-top: 1%;
+  cursor: pointer;
+}
 /* The typing effect */
 @keyframes typing {
   from {
