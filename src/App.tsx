@@ -20,6 +20,8 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import moment from "moment";
+import Button from "@material-ui/core/Button";
 import "./App.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,6 +37,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
 }));
+
+let dob = "29/06/1995";
+let now = new Date();
+
+let diff = moment(now, "DD/MM/YYYY").diff(moment(dob, "DD/MM/YYYY"));
+let duration = moment.duration(diff);
+let age = Math.floor(parseInt(duration.asYears() + ""));
 
 function App() {
   const classes = useStyles();
@@ -73,16 +82,10 @@ function App() {
               <div>
                 <div className={classes.root}>
                   <Grid container spacing={3}>
-                    <Grid item xs={12} sm={6}>
-                      <Paper elevation={0} className={classes.paper}>
-                        <div>
-                          <img
-                              src={mypic}
-                              alt="image"
-                              style={{ height: "35vh" }}
-                          />
-                        </div>
-                      </Paper>
+                    <Grid item xs={12} sm={6} style={{ margin: "auto" }}>
+                      {/*<Paper elevation={0} className={classes.paper}>*/}
+                      <img src={mypic} alt="image" style={{ height: "35vh" }} />
+                      {/*</Paper>*/}
                     </Grid>
                     <Grid item xs={12} sm={6}>
                       <Paper elevation={0} className={classes.paper}>
@@ -98,7 +101,7 @@ function App() {
                             <p>
                               <b>Age:</b>
                             </p>
-                            25
+                            {age}
                             <p>
                               <b>Location</b>
                             </p>
@@ -166,6 +169,7 @@ function App() {
                         programming, Discrete mathematics, Operating Systems,
                         Optimization Theory
                       </Typography>
+                      <Button size="small">More...</Button>
                     </Paper>
                   </TimelineContent>
                 </TimelineItem>
@@ -200,6 +204,7 @@ function App() {
                         Identified, designed, implemented and automated solutions
                         for the Operations team directly impacting the bottom line{" "}
                       </Typography>
+                      <Button size="small">More...</Button>
                     </Paper>
                   </TimelineContent>
                 </TimelineItem>
@@ -265,6 +270,7 @@ function App() {
                         Designed and developed two softwares to simulate
                         automotive embedded systems in virtual environments{" "}
                       </Typography>
+                      <Button size="small">More...</Button>
                     </Paper>
                   </TimelineContent>
                 </TimelineItem>
@@ -289,9 +295,10 @@ function App() {
                   <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                       <Typography>
-                        Courses: Python, SQL, Inferential Statistics, Haddop,
+                        Courses: Python, SQL, Inferential Statistics, Hadoop,
                         PySpark, Machine Learning, Deep Learning
                       </Typography>
+                      <Button size="small">Projects...</Button>
                     </Paper>
                   </TimelineContent>
                 </TimelineItem>
@@ -313,11 +320,57 @@ function App() {
                         Moocs from Coursera, HP, Cetpa (MS certified Silver
                         Learning Partner) etc..
                       </Typography>
+                      <Button size="small">More...</Button>
                     </Paper>
                   </TimelineContent>
                 </TimelineItem>
               </Timeline>
             </div>
+          </div>
+        </div>
+        <div>
+          <div className="heading">
+            <h2> This is my system </h2>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a
+                    href="https://www.quora.com/Is-getting-rich-worth-it-9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  PURSUE PASSIONS, NOT PAYCHECKS
+                </a>
+              </li>
+              <li>
+                <a
+                    href="http://paulgraham.com/ecw.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  BELIEVE IN CHANGE
+                </a>
+              </li>
+              <li>
+                <a
+                    href="http://paulgraham.com/founders.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  Be Crafty, Lovable, Systematic, and Relentless
+                </a>
+              </li>
+              <li>
+                <a
+                    href="http://blogoscoped.com/archive/2005-08-24-n14.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  BE LAZY AND DUMB
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <footer>
