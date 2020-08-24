@@ -73,7 +73,7 @@ function App() {
                 <div className="subheading">
                   <p>Who Am I?</p>
                 </div>
-                <div>
+                <div style={{ margin: "16px" }} >
                   I am a full-stack developer. I am a senior developer with good
                   knowledge of front-end techniques. I am an aspiring Data
                   Scientist and love to talk about it. I love spending time on
